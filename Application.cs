@@ -4,7 +4,7 @@ public class Application
 {
     public static void Main()
     {
-        var logger = Logger.GetLogger();
+        var logger = Logger.GetInstance();
     }
 }
 
@@ -16,7 +16,7 @@ public class Logger
 	{
 	}
 
-    public static Logger GetLogger()
+    public static Logger GetInstance()
     {
         if (instance == null)
         {
